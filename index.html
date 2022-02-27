@@ -3,167 +3,259 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="main.js" defer></script>
     <title>ULTIMATE SOLUTIONS</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">ULTIMATE SOLUTIONS</a>
-      <div class="menu-btn">
-        <div class="menu-btn__lines"></div>
-      </div>
-      <ul class="menu-items">
-        <li><a href="#" class="menu-item">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="menu-item expand-btn">Dropdown Menu</a>
-          <ul class="dropdown-menu expandable">
-            <li><a href="#" class="menu-item">Item 1</a></li>
-            <li><a href="#" class="menu-item">Item 2</a></li>
-            <li class="dropdown dropdown-right">
-              <a href="#" class="menu-item expand-btn">
-                Item 3
-                <i class="fas fa-angle-right"></i>
-              </a>
-              <ul class="menu-right expandable">
-                <li><a href="#" class="menu-item">Item 3.1</a></li>
-                <li><a href="#" class="menu-item">Item 3.2</a></li>
-                <li><a href="#" class="menu-item">Item 3.3</a></li>
-                <li><a href="#" class="menu-item">Item 3.4</a></li>
-              </ul>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="text-transform: uppercase"
+          ><img
+            src="./assets/img/logo.png"
+            width="180px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mobile_nav"
+          aria-controls="mobile_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mobile_nav">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 float-md-right"></ul>
+          <ul class="navbar-nav navbar-light">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='blue'"
+                >Home</a
+              >
             </li>
-            <li><a href="#" class="menu-item">Item 4</a></li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                onMouseOver="this.style.color='white'"
+                onMouseOut="this.style.color='blue'"
+                >About Us</a
+              >
+            </li>
+
+            <!--========-->
+            <li class="nav-item dropdown megamenu-li dmenu">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                id="dropdown01"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Digital Marketing Services</a
+              >
+              <div
+                class="dropdown-menu megamenu sm-menu border-top"
+                aria-labelledby="dropdown01"
+              >
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>Ecommerce</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-magento"></i> Magento Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-magento"></i> Magento 2 Migration</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-magento"></i> Odoo ERP</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-magento"></i> Mobile Commerce</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-magento"></i> CRM for Commerce</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>LAMP Technology</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-php"></i> PHP Website Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-circle"></i> Phalcon Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-laravel"></i> Laravel Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-wordpress-simple"></i> WordPress
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-php"></i> Symfony Development</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>Mobile</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-apple"></i> iPhone App Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-android"></i> Android App Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-mobile-alt"></i> Phone Gap App
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-tablet-alt"></i> Hybrid App
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-mobile-alt"></i> Ionic Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-tablet-alt"></i> React Native
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-mobile-alt"></i> Xamarin App
+                      Development</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 mb-4">
+                    <h6>Node.js & MongoDB</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-cubes"></i> Full Stack Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-cube"></i> MEAN Stack</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-angular"></i> AngularJS</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-node-js"></i> Node.JS Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-leaf fa-rotate-90"></i> MongoDB
+                      Development</a
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>Microsoft Technology</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> Microsoft App
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> MS Desktop App
+                      Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> SharePoint Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> ASP.NET Development</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> CMS Development</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>Cloud Services</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-cloud"></i> DevOps</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-amazon"></i> Amazon Web Services</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-windows"></i> Azure Cloud Service</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-google"></i> Google App Engine
+                      Services</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 border-right mb-4">
+                    <h6>Enterprise Services</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> Augmented Reality</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> CRM</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fab fa-buromobelexperte"></i> Enterprise
+                      Mobility Services</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-th-large"></i> Blockchain Services</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-briefcase"></i> Business Intelligence</a
+                    >
+                  </div>
+                  <div class="col-sm-6 col-lg-3 mb-4">
+                    <h6>Digital Marketing</h6>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> Digital Marketing</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> PPC Management Services</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> E-commerce SEO Services</a
+                    >
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop"></i> Conversion Rate
+                      Optimization</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!--=========-->
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo siteURL;?>portfolio.php"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo siteURL;?>blog.php">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo siteURL;?>contact-us.php"
+                >Contact us</a
+              >
+            </li>
           </ul>
-        </li>
-        <li>
-          <a href="#" class="menu-item expand-btn">Mega Menu</a>
-          <div class="mega-menu expandable">
-            <div class="content">
-              <div class="col">
-                <section>
-                  <h2>Featured 1</h2>
-                  <a href="#" class="img-wrapper"
-                    ><span class="img"
-                      ><img
-                        src="https://picsum.photos/400?random=1"
-                        alt="Random Image" /></span
-                  ></a>
-                  <p>Lorem ipsum dolor sit amet.</p>
-                </section>
-              </div>
-              <div class="col">
-                <section>
-                  <h2>Featured 2</h2>
-                  <ul class="mega-links">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col">
-                <section>
-                  <h2>Featured 3</h2>
-                  <ul class="mega-links">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                  </ul>
-                </section>
-              </div>
-              <div class="col">
-                <section>
-                  <h2>Featured 4</h2>
-                  <ul class="mega-links">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                  </ul>
-                </section>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="menu-item expand-btn">Blog</a>
-          <div class="mega-menu blog expandable">
-            <div class="content">
-              <div class="col">
-                <a href="#" class="img-wrapper"
-                  ><span class="img"
-                    ><img
-                      src="https://picsum.photos/400?random=2"
-                      alt="Random Image" /></span
-                ></a>
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
-                  quibusdam deserunt quis.
-                </p>
-                <a href="#" class="read-more">read more...</a>
-              </div>
-              <div class="col">
-                <a href="#" class="img-wrapper"
-                  ><span class="img"
-                    ><img
-                      src="https://picsum.photos/400?random=3"
-                      alt="Random Image" /></span
-                ></a>
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
-                  quibusdam deserunt quis.
-                </p>
-                <a href="#" class="read-more">read more...</a>
-              </div>
-              <div class="col">
-                <a href="#" class="img-wrapper"
-                  ><span class="img"
-                    ><img
-                      src="https://picsum.photos/400?random=4"
-                      alt="Random Image" /></span
-                ></a>
-                <h2>Title</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolorum vel quae quos culpa! Voluptate ipsum adipisci et
-                  quibusdam deserunt quis.
-                </p>
-                <a href="#" class="read-more">read more...</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li><a href="#" class="menu-item">About</a></li>
-      </ul>
-    </header>
-    <section class="section">
-      <h1 class="company">Ultimate Solutions
-        Increase Conversion.</h1>
-        <!-- <p class="slagon">
-          Ultimate Solutions, ERP çözümleri ve özel sistemler geliştirme konusunda uzmanlaşmış bir Bilgi Teknolojileri
-          şirketidir. Ultimate Solutions kurulduğu 1993 yılından bu yana pazara küresel standartlara ve ileri
-          teknolojiye uygun optimal BT çözümleri sunmaktadır.
-        </p> -->
-    </section>
-
-    
-
-    
-    
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
   </body>
 </html>
