@@ -119,3 +119,133 @@ h2 {
 p {
   padding: 10px;
 }
+
+/* Cards and Keyframes */
+.card-deck> .card{
+  border-radius: 15px;
+}
+.card-deck>.card:hover{
+  background-color: #3B5998;
+  color: #fff;
+  transition: 0.6s ease all;
+}
+.col>.card-cover{
+  border-radius: 15px;
+}
+
+/* Slider */
+.slide img{
+  width: 160px;
+  margin:30px;
+}
+.nav-item> a:hover{
+  color: #fff !important;
+}
+.faq-section .mb-0 > a {
+display: block;
+position: relative;
+}
+
+.faq-section .mb-0 > a:after {
+content: "\f067";
+font-family: "Font Awesome 5 Free";
+position: absolute;
+right: 0;
+font-weight: 600;
+}
+
+.faq-section .mb-0 > a[aria-expanded="true"]:after {
+content: "\f068";
+font-family: "Font Awesome 5 Free";
+font-weight: 600;
+}
+.object {
+-webkit-animation: action 1s infinite  alternate;
+animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+0% { transform: translateY(10); }
+100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+0% { transform: translateY(10); }
+100% { transform: translateY(-10px); }
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity: 0.6;
+}
+
+/**
+ * Button
+ */
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 70px;
+}
+
+.btn-large {
+  padding: 11px 45px;
+  font-size: 18px;
+}
+
+/**
+ * Change animation duration
+ */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+

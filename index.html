@@ -11,10 +11,15 @@
       crossorigin="anonymous"
     />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/main.js" defer></script>
     <title>ULTIMATE SOLUTIONS</title>
   </head>
   <body>
@@ -25,9 +30,7 @@
           class="navbar-brand"
           href="index.html"
           style="text-transform: uppercase"
-          ><img
-            src="./assets/img/logo.png"
-            width="180px"
+          ><img src="./assets/img/logo.png" width="180px"
         /></a>
         <button
           class="navbar-toggler"
@@ -49,7 +52,7 @@
                 href="#"
                 onMouseOver="this.style.color='white'"
                 onMouseOut="this.style.color='blue'"
-                >Home</a
+                >Ana Sayfa</a
               >
             </li>
             <li class="nav-item">
@@ -58,7 +61,7 @@
                 href="#"
                 onMouseOver="this.style.color='white'"
                 onMouseOut="this.style.color='blue'"
-                >About Us</a
+                >Hakkımızda</a
               >
             </li>
 
@@ -71,7 +74,7 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Digital Marketing Services</a
+                >Ürünlerimiz</a
               >
               <div
                 class="dropdown-menu megamenu sm-menu border-top"
@@ -152,7 +155,7 @@
                       ><i class="fas fa-cube"></i> MEAN Stack</a
                     >
                     <a class="dropdown-item" href="#"
-                      ><i class="fab fa-angular"></i> AngularJS</a
+                      ><i class="fab fa-angular"></i> Angular</a
                     >
                     <a class="dropdown-item" href="#"
                       ><i class="fab fa-node-js"></i> Node.JS Development</a
@@ -241,7 +244,7 @@
             <!--=========-->
             <li class="nav-item">
               <a class="nav-link" href="<?php echo siteURL;?>portfolio.php"
-                >Portfolio</a
+                >Referanslar</a
               >
             </li>
             <li class="nav-item">
@@ -249,7 +252,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo siteURL;?>contact-us.php"
-                >Contact us</a
+                >Hakkımızda</a
               >
             </li>
           </ul>
@@ -257,5 +260,335 @@
       </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Start Main Section -->
+    <div
+      style="
+        background: linear-gradient(75deg, #65258a 10%, #e80566) !important;
+      "
+    >
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="assets/img/hero-img.png"
+              class="d-block mx-lg-auto img-fluid object"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1
+              class="display-5 fw-bold lh-1 mb-3"
+              style="font-weight: 700; color: #fff"
+            >
+              <span
+                style="text-transform: uppercase; text-shadow: 2px 2px #ff0000"
+                >We Provide Experts in</span
+              >
+              <br /><span class="type"></span>
+            </h1>
+
+            <p class="lead" style="color: #fff; padding: 0">
+              We are the leading digital marketing agency providing search
+              engine optimization, web designing, social media marketing, paid
+              advertisement, online reputation management, graphic designing,
+              and more.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button
+                type="button"
+                class="btn btn-outline-light btn-lg px-4 me-md-2"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Section -->
+
+    <!--about section start-->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="card" style="border: none">
+            <div class="card-body">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Who We Are</h1>
+              <p class="lead" style="padding: 0">
+                We are the leading digital marketing agency providing search
+                engine optimization, web designing, social media marketing, paid
+                advertisement, online reputation management, graphic designing,
+                and content writing services.
+              </p>
+
+              <!-- collapse start  -->
+
+              <div class="flex flex-column mb-5 mt-4 faq-section">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header" id="heading-1">
+                          <h5 class="mb-0">
+                            <a
+                              role="button"
+                              data-toggle="collapse"
+                              href="#collapse-1"
+                              aria-expanded="true"
+                              aria-controls="collapse-1"
+                            >
+                              What is FXCopier?
+                            </a>
+                          </h5>
+                        </div>
+                        <div
+                          id="collapse-1"
+                          class="collapse show"
+                          data-parent="#accordion"
+                          aria-labelledby="heading-1"
+                        >
+                          <div class="card-body">
+                            FXCOPIER is the worlds most reliable remote trade
+                            copier. Its allow you to copy trades almost
+                            instantly between hundreds of MT4 accounts.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="heading-2">
+                          <h5 class="mb-0">
+                            <a
+                              class="collapsed"
+                              role="button"
+                              data-toggle="collapse"
+                              href="#collapse-2"
+                              aria-expanded="false"
+                              aria-controls="collapse-2"
+                            >
+                              How to get this trade copier?
+                            </a>
+                          </h5>
+                        </div>
+                        <div
+                          id="collapse-2"
+                          class="collapse"
+                          data-parent="#accordion"
+                          aria-labelledby="heading-2"
+                        >
+                          <div class="card-body">
+                            After subscription you will get our special trade
+                            copier. If you want to use this copier for business
+                            purpose or other commercial pupose then directly
+                            contact with www.fxcopier.co.uk.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="heading-3">
+                          <h5 class="mb-0">
+                            <a
+                              class="collapsed"
+                              role="button"
+                              data-toggle="collapse"
+                              href="#collapse-3"
+                              aria-expanded="false"
+                              aria-controls="collapse-3"
+                            >
+                              How's Your Product Delivery?
+                            </a>
+                          </h5>
+                        </div>
+                        <div
+                          id="collapse-3"
+                          class="collapse"
+                          data-parent="#accordion"
+                          aria-labelledby="heading-3"
+                        >
+                          <div class="card-body">
+                            After subscription you will get our special trade
+                            copier. If you want to use this copier for business
+                            purpose or other commercial pupose then directly
+                            contact with www.fxcopier.co.uk.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- collapse end  -->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="card" style="border: none">
+            <div class="card-body">
+              <img
+                src="https://i.pinimg.com/originals/00/6b/27/006b2787627b0b67bb91d9716d6e5058.gif"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--about section end-->
+
+    <!--service section start -->
+    <section style="padding: 40px 0 40px 0; background: #f4f4f4">
+      <div class="container">
+        <div class="section-title text-center">
+          <h1>Our Featured Services</h1>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+            quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.
+          </p>
+        </div>
+        <br />
+        <div class="card-deck text-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="card-deck text-center">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This card has supporting text below as a natural lead-in to
+                additional content.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section End -->
+
+    <!--blog section start-->
+ <div class="container px-4 py-5" id="custom-cards">
+  <div class="section-title text-center">
+    <h1>Our Latest Blog</h1>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+  </div>
+
+<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+<div class="col">
+  <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://getbootstrap.com/docs/5.0/examples/features/unsplash-photo-1.jpg');">
+    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+      <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h1>
+      <ul class="d-flex list-unstyled mt-auto">
+        <li class="me-auto">
+          <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+        </li>
+        <li class="d-flex align-items-center me-3">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+          <small>Earth</small>
+        </li>
+        <li class="d-flex align-items-center">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+          <small>3d</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('https://getbootstrap.com/docs/5.0/examples/features/unsplash-photo-2.jpg');">
+    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+      <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h1>
+      <ul class="d-flex list-unstyled mt-auto">
+        <li class="me-auto">
+          <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+        </li>
+        <li class="d-flex align-items-center me-3">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+          <small>India</small>
+        </li>
+        <li class="d-flex align-items-center">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+          <small>4d</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col">
+  <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+      <h1 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h1>
+      <ul class="d-flex list-unstyled mt-auto">
+        <li class="me-auto">
+          <img src="https://getbootstrap.com/docs/5.0/examples/features/unsplash-photo-3.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+        </li>
+        <li class="d-flex align-items-center me-3">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+          <small>California</small>
+        </li>
+        <li class="d-flex align-items-center">
+          <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+          <small>5d</small>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!--blog section end-->
   </body>
 </html>
